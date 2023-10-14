@@ -1,37 +1,61 @@
-import {AiFillGithub,AiOutlineMedium} from 'react-icons/ai'
-import {FaXTwitter} from 'react-icons/fa6'
-import {GiHamburgerMenu} from 'react-icons/gi'
+
+import Link from "next/link"
+import {AiOutlineGithub,AiOutlineTwitter,AiOutlineMedium} from "react-icons/ai"
+import {RxHamburgerMenu,RxCross2} from 'react-icons/rx'
+import styles from './Navbar.module.css'
+import { useState } from "react";
 
 export default function Navbar(){
-    return (
-        <div className="mt-2 h-[50px] w-full max-lg:w-[100%] bg-bottle-green flex justify-between text-white items-center px-2">
-            <div className="">
-                <span className='text-lg font-bold max-lg:text-sm max-lg:font-semibold'>YASH PATEL</span>
-            </div>
-            <div className='lg:hidden'>
-                <span className='cursor-pointer text-4xl'>
-                    <GiHamburgerMenu/>
-                </span>
-            </div>
-            <div className="max-lg:hidden">
-                <ul className="flex justify-between gap-3 text-md tracking-wide"> 
-                    <li className='cursor-pointer hover:text-dark-green'>Home</li>
-                    <li className='cursor-pointer  hover:text-dark-green'>About</li>
-                    <li className='cursor-pointer  hover:text-dark-green'>Skills</li>
-                    <li className='cursor-pointer  hover:text-dark-green'>Contact</li>
-                    <li className='cursor-pointer  hover:text-dark-green'>Blog</li>
-                  
-                </ul>
+    const [isopen, setIsopen] = useState(false);
+    const toggleButten = ()=>{
+        setIsopen(true);
+    }
 
-            </div>
-            <div className="max-lg:hidden">
-                <ul className="flex justify-between items-center gap-1">
-                    <li className='text-white text-2xl  hover:text-dark-green cursor-pointer'><AiFillGithub /></li>
-                    <li className='text-white text-2xl  hover:text-dark-green cursor-pointer'><FaXTwitter /></li>
-                    <li className='text-white text-2xl  hover:text-dark-green cursor-pointer'>< AiOutlineMedium/></li>
+    const closeButten = ()=>{
+        setIsopen(false);
+    }
+
+    const options = [
+        {title:"Home" , href:"/home"},
+        {title:"About" , href:"/about"},
+        {title:"Skills" , href:"/skills"},
+        {title:"Contact" , href:"/contact"},
+        {title:"Blogs" , href:"/blogs"},
+    ]
+
+    return (
+        <div className="flex w-full justify-center items-start pt-5 ">
+            <div className="flex w-full justify-between items-start px-10 text-white">
+                <div>
+                    <h2 className="text-xl font-bold">YASH PATEL</h2>
+                </div>
+                <div className={styles.options}>
+                    {
+                        options.map((item)=>{
+                            return (<Link href={item.href} className="">{item.title}</Link>)
+                        })
+                    }
                     
-                </ul>
+                </div>
+                <div className="max-lg:hidden flex text-3xl items-center gap-3 text-white">
+                    <Link href="" className="bg-black"><AiOutlineGithub/></Link>
+                    <Link href="" className="bg-black"><AiOutlineTwitter/></Link>
+                    <Link href="" className="bg-black"><AiOutlineMedium/></Link>
+
+
+                </div>
+                <div className="lg:hidden text-3xl text-white items-center flex pr-4 cursor-pointer">
+                    {
+                    isopen ? (
+                        <RxCross2 onClick = {closeButten}/>
+                    ):(
+                    <RxHamburgerMenu onClick={toggleButten}/>)
+                    }
+                </div>
             </div>
+            {/* <div className={}> 
+
+            </div> */}
         </div>
     )
 }
