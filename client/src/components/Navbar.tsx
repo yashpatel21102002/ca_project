@@ -32,7 +32,7 @@ export default function Navbar(){
                 <div className={styles.options}>
                     {
                         options.map((item)=>{
-                            return (<Link href={item.href} className="">{item.title}</Link>)
+                            return (<Link href={item.href} key={item.title} className="">{item.title}</Link>)
                         })
                     }
                     
