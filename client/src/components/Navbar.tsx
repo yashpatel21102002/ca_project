@@ -24,8 +24,9 @@ export default function Navbar(){
     ]
 
     return (
-        <div className="flex w-full justify-center items-start pt-5 ">
-            <div className="flex w-full justify-between items-start px-10 text-white">
+        <>
+        <div className={`flex w-full justify-center items-start pt-5 ${isopen ? "bg-black":""}`}>
+            <div className={`flex w-full justify-between items-start px-10 text-white max-md:px-2` }>
                 <div>
                     <h2 className="text-xl font-bold">YASH PATEL</h2>
                 </div>
@@ -44,7 +45,7 @@ export default function Navbar(){
 
 
                 </div>
-                <div className="lg:hidden text-3xl text-white items-center flex pr-4 cursor-pointer">
+                <div className="lg:hidden text-3xl text-white items-center flex  cursor-pointer">
                     {
                     isopen ? (
                         <RxCross2 onClick = {closeButten}/>
@@ -53,9 +54,33 @@ export default function Navbar(){
                     }
                 </div>
             </div>
-            {/* <div className={}> 
-
-            </div> */}
+            
         </div>
+        <div className="bg-light justify-center items-center text-white">
+        {
+            isopen && (
+                <div className="flex flex-col justify-center items-center py-8 gap-8 bg-black">
+                {
+                    options.map((item)=>{
+                        return (<Link href={item.href} key={item.title} className="">{item.title}</Link>)
+                    })
+                }
+                
+            </div>
+
+            )
+        }
+        {
+            isopen && (
+        <div className=" flex text-3xl items-center gap-3 text-white">
+                    <Link href="" className="bg-black"><AiOutlineGithub/></Link>
+                    <Link href="" className="bg-black"><AiOutlineTwitter/></Link>
+                    <Link href="" className="bg-black"><AiOutlineMedium/></Link>
+
+
+        </div>)
+    }
+    </div>
+    </>
     )
 }
