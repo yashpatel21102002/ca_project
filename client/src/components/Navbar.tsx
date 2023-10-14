@@ -9,7 +9,7 @@ export default function Navbar(){
                 <span className='text-lg font-bold max-lg:text-sm max-lg:font-semibold'>YASH PATEL</span>
             </div>
             <div className='lg:hidden'>
-                <span className='cursor-pointer'>
+                <span className='cursor-pointer text-4xl'>
                     <GiHamburgerMenu/>
                 </span>
             </div>
