@@ -13,8 +13,8 @@ export default function Profile(){
                         <button className="bg-white px-5 py-2 rounded-full cursor-pointer text-black font-bold">Products</button>
                     </div>
                 </div>
-                <div className="flex justify-center items-center basis-1/3 max-lg:order-1 ">
-                    <Image src={Okay} alt="okay" className="rounded-lg bg-light w-[350px] object-cover shadow-bottle-green"/>
+                <div className="flex justify-center items-center basis-1/3 max-lg:order-1 box-border shadow-lg shadow-light">
+                    <Image src={Okay} alt="okay" className="rounded-lg bg-light w-[350px] object-cover shadow-light"/>
                 </div>
             </div>
         </div>

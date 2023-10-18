@@ -15,12 +15,12 @@ const config: Config = {
       },
     },
     colors:{
-      'black':'#000000',
-      'green':'#0A322A',
-      'light':'#FE5050',
+      'black':'#005B41',
+      'green':'#232D3F',
+      'light':'#008170',
       'white':'#FFFFFF',
-      'dark-green':'#01201A',
-      'bottle-green':'#23AB99',
+      'dark-green':'#0F0F0F',
+      'bottle-green':'#C70039',
       'light-green':'#237A57'
     }
   },

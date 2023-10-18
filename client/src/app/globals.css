@@ -11,3 +11,28 @@
   body{
     font-family: 'Roboto', sans-serif;
   }
+
+  /* Hide the vertical scrollbar */
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Hide the horizontal scrollbar */
+body::-webkit-scrollbar:horizontal {
+  height: 0;
+}
+
+/* Handle (thumb) */
+body::-webkit-scrollbar-thumb {
+  background: transparent; /* Make the scrollbar thumb transparent */
+}
+
+/* Track (the area on which the thumb moves) */
+body::-webkit-scrollbar-track {
+  background: transparent; /* Make the scrollbar track transparent */
+}
+
+/* Corner (where the vertical and horizontal scrollbars meet) */
+body::-webkit-scrollbar-corner {
+  background: transparent; /* Make the scrollbar corner transparent */
+}
