@@ -1,6 +1,7 @@
 "use client"
 import Navbar from "@/components/Navbar";
 import Profile from "@/components/Profile";
+import Skills from "@/components/Skills";
 
 export default function Home(){
   return(
@@ -11,6 +12,8 @@ export default function Home(){
 
         <Navbar/>
         <Profile/>
+        <Skills/>
+
       </div>
     </div>
   )
