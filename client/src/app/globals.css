@@ -36,3 +36,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-corner {
   background: transparent; /* Make the scrollbar corner transparent */
 }
+
+.text-gradient {
+  background: -webkit-linear-gradient(#008170, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

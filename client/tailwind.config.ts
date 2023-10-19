@@ -21,7 +21,8 @@ const config: Config = {
       'white':'#FFFFFF',
       'dark-green':'#0F0F0F',
       'bottle-green':'#C70039',
-      'light-green':'#237A57'
+      'light-green':'#237A57',
+      
     }
   },
   plugins: [],

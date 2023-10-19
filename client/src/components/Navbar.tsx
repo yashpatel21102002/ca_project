@@ -25,7 +25,7 @@ export default function Navbar(){
 
     return (
         <>
-        <div className={`flex w-full justify-center items-start pt-5 ${isopen ? "bg-black":""}`}>
+        <div className={`flex w-full sticky bg-dark-green top-0 justify-center items-start pt-5 ${isopen ? "bg-black":""}`}>
             <div className={`flex w-full justify-between items-start text-white max-md:px-2` }>
                 <div>
                     <h2 className="text-xl font-bold">YASH PATEL</h2>
@@ -50,7 +50,7 @@ export default function Navbar(){
             </div>
             
         </div>
-        <div className="bg-black justify-center items-center text-white">
+        <div className="bg-black justify-center items-center text-white " >
         {
             isopen && (
                 <div className="flex flex-col justify-center items-center py-8 gap-8 bg-black">
