@@ -10,7 +10,7 @@ export default function Profile(){
                     <h3 className="text-xl max-lg:text-base opacity-60 font-thin">Hi👋,I am <span className="text-white animate-pulse underline italic"> yash patel</span>, you can see my portfolio from bottom of the website. click on the button to contact me. You can contact me for the collaboration works on whatsapp. </h3>
                     <div className="flex gap-3 ">
                         <button className="bg-light font-bold px-5 py-2 rounded-full cursor-pointer">Contact Me</button>
-                        <button className="bg-white px-5 py-2 rounded-full cursor-pointer text-black font-bold">Products</button>
+                        <button className="bg-white px-5 py-2 rounded-full cursor-pointer text-black font-bold">Resume</button>
                     </div>
                 </div>
                 <div className="flex justify-center items-center  max-lg:order-1 box-border shadow-lg shadow-light rounded-lg w-[300px]">
