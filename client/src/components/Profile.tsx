@@ -1,20 +1,21 @@
 
 import Image from "next/image"
-import Okay from '../../public/okay.png'
+import Okay from '../../public/pngwing.com.png'
 export default function Profile(){
     return (
         <div className={`flex w-full pt-16 max-lg:pt-5 justify-between items-start text-white max-md:px-2 h-auto` }>
             <div className="flex justify-around gap-10 items-center w-full h-full max-lg:flex-col max-lg:justify-center">
-                <div className="flex flex-col gap-3 justify-center h-full basis-1/2 max-lg:order-2" >
-                    <h1 className="text-5xl max-lg:text-2xl">Software Developer: Transforming Ideas into <span className="text-light"> Digital Reality</span></h1>
-                    <h3 className="text-xl max-lg:text-base opacity-60 font-thin text-justify">Hi👋,I am <span className="text-white animate-pulse underline italic"> yash patel</span>, you can see my portfolio from bottom of the website. click on the button to contact me. You can contact me for the collaboration works on whatsapp. </h3>
+                <div className="flex flex-col gap-3 justify-center h-full basis-1/3 max-lg:order-2" >
+                    <h1 className="text-3xl font-bold text-white sm:text-4xl xl:text-4xl font-pj"><span className="text-light">Tax Advisory Services:</span>Your Partner in Tax Efficiency</h1>
+                    <h3 className="text-xl max-lg:text-base opacity-60 font-thin text-justify">
+Tax Advisory Services are expert financial guidance provided to individuals and businesses to help them navigate the complexities of the tax system, optimize their tax liabilities.</h3>
                     <div className="flex gap-3">
-                        <button className="bg-light font-bold px-5 py-2 rounded-full cursor-pointer">Contact Me</button>
-                        <button className="bg-white px-5 py-2 rounded-full cursor-pointer text-black font-bold">Resume</button>
+                        <button className="bg-light font-bold px-5 py-2 rounded-full cursor-pointer">Call Us</button>
+                        <button className="bg-white px-5 py-2 rounded-full cursor-pointer text-black font-bold">Purchase</button>
                     </div>
                 </div>
-                <div className="flex justify-center items-center  max-lg:order-1 box-border shadow-lg shadow-light rounded-lg w-[300px]">
-                    <Image src={Okay} alt="okay" className="rounded-lg bg-light w-[300px] object-cover shadow-light"/>
+                <div className="flex  justify-center items-center  max-lg:order-1 box-border rounded-lg w-[600px] h-[300px] max-lg:w-full max-lg:h-[200px]">
+                    <Image src={Okay} alt="" className="rounded-lg bg-white w-[600px] max-lg:w-full h-[300px] max-lg:h-[200px] object-cover"/>
                 </div>
             </div>
         </div>

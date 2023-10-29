@@ -2,20 +2,25 @@
 
 export default function About(){
     return (
-        <div className="text-white w-full justify-center items-center flex flex-col mt-16 gap-4">
-            <h1 className="text-2xl font-light">About <span className="text-light">Me</span></h1>
-            <span className=" text-xl font-bold text-[#ffffff] w-[90%] max-lg:w-[95%] max-lg:text-sm text-justify mt-4">HI🙋‍♂️ , I AM <span className="text-light">YASH PATEL</span> PASSIONATE SOFTWARE DEVELOPER FROM <span className="text-light">INDIA</span></span>
+        <div className="text-white mt-36 w-full justify-center items-center flex flex-col gap-4">
+            <h1 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj">About <span className="text-light">Plan</span></h1>
+            <span className=" text-xl font-bold text-[#ffffff] w-[90%] max-lg:w-[95%] max-lg:text-sm text-justify mt-4">HI🙋‍♂️ , I AM <span className="text-light">STEWART</span> PASSIONATE CA FROM <span className="text-light">INDIA</span></span>
             
-            <span className="text-xl font-light text-[gray] w-[90%] max-lg:w-[95%] max-lg:text-sm text-justify">I am passionate software developer who works on buliding interesting things, graduated from vishwakarma government engineering college in 2024. Pretty Good at Javascript , interested in Opensource Contributions. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nihil consequuntur obcaecati architecto voluptatum. Eaque architecto facilis magni possimus labore. Est quas exercitationem voluptatum nam id possimus, laborum voluptates alias dolores fuga optio voluptas necessitatibus animi veritatis impedit accusamus fugiat atque quos assumenda nihil ad, doloremque hic quidem. Incidunt, excepturi.</span>
-
+            <span className="text-xl font-light text-[gray] w-[90%] max-lg:w-[95%] max-lg:text-sm text-justify">Tax Advisory Services are expert financial guidance provided to individuals and businesses to help them navigate the complexities of the tax system, optimize their tax liabilities, and ensure compliance with tax laws. These services encompass tax planning, strategy development, and assistance with tax compliance. Whether it is s minimizing tax burdens, managing tax risks, or maximizing available deductions and credits, Tax Advisory Services offer tailored solutions to meet the unique tax needs and goals of clients, ultimately helping them make informed financial decisions and save money while staying within the legal boundaries of the tax code.
+            </span>
+            <span className="text-xl font-light text-[gray] w-[90%] max-lg:w-[95%] max-lg:text-sm text-justify">Tax Advisory Services are expert financial guidance provided to individuals and businesses to help them navigate the complexities of the tax system, optimize their tax liabilities, and ensure compliance with tax laws. These services encompass tax planning, strategy development, and assistance with tax compliance. Whether it is s minimizing tax burdens, managing tax risks, or maximizing available deductions and credits, Tax Advisory Services offer tailored solutions to meet the unique tax needs and goals of clients, ultimately helping them make informed financial decisions and save money while staying within the legal boundaries of the tax code.
+            </span>
+            <span className="text-2xl font-bold text-[white] w-[90%] max-lg:w-[95%] max-lg:text-sm text-justify">Perks for Purchasing this plan
+            </span>
+            
             <ul className="text-xl font-light text-[gray] w-[90%] max-lg:w-[95%] max-lg:text-sm text-justify list-disc pl-4 flex flex-col gap-4 max-lg:gap-2 max-lg:text-left">
-                <li>🌍 I am based in India</li>
-                <li>🖥️ See my portfolio at <a href="" className="cursor-pointer text-light underline">Github</a></li>
-                <li>✉️ You can contact me at <a href="" className="cursor-pointer text-light underline">yashpatel21102001@gmail.com</a></li>
-                <li>🚀 I am currently working on <a href="" className="cursor-pointer text-light underline">MiddleTube</a></li>
-                <li>🧠 I am learning Docker and Kubernetes</li>
-                <li>🤝 I am open to collaborating on </li>
-                <li>⚡ I am eager to meet you!</li>
+                <li>🌍 #1</li>
+                <li>🖥️ #2 <a href="" className="cursor-pointer text-light underline">@1</a></li>
+                <li>✉️ #3 <a href="" className="cursor-pointer text-light underline">@2</a></li>
+                <li>🚀 #4 <a href="" className="cursor-pointer text-light underline">@3</a></li>
+                <li>🧠 #6</li>
+                <li>🤝 #7 </li>
+                <li>⚡ #8</li>
             </ul>
             
         </div>
