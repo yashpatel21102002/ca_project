@@ -6,7 +6,7 @@ export default function Profile(){
         <div className={`flex w-full pt-16 max-lg:pt-5 justify-between items-start text-white max-md:px-2 h-auto` }>
             <div className="flex justify-around gap-10 items-center w-full h-full max-lg:flex-col max-lg:justify-center">
                 <div className="flex flex-col gap-3 justify-center h-full basis-1/3 max-lg:order-2" >
-                    <h1 className="text-3xl font-bold text-white sm:text-4xl xl:text-4xl font-pj"><span className="text-light">Tax Advisory Services:</span>Your Partner in Tax Efficiency</h1>
+                    <h1 className="text-2xl font-bold text-white sm:text-4xl xl:text-4xl font-pj"><span className="text-light">Tax Advisory Services:</span>Your Partner in Tax Efficiency</h1>
                     <h3 className="text-xl max-lg:text-base opacity-60 font-thin text-justify">
 Tax Advisory Services are expert financial guidance provided to individuals and businesses to help them navigate the complexities of the tax system, optimize their tax liabilities.</h3>
                     <div className="flex gap-3">
