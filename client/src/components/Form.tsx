@@ -95,7 +95,7 @@ const ContactForm = () => {
                     
                   <button
                     type="submit"
-                    className="w-24 bg-[black] text-white p-2 rounded-lg hover:bg-[black]-[black] transition-colors duration-300 focus:outline-none"
+                    className="w-24 bg-white p-2 rounded-lg hover:bg-[black]-[black] transition-colors duration-300 focus:outline-none"
                   >
                     Pay
                   </button>
